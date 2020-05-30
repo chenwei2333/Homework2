@@ -1,50 +1,38 @@
 ﻿using System;
+
+
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace cw1
+namespace SECOND2
 {
     class Program
     {
-
-        public static void Main(String[] args)
+        static void Main(string[] args)
         {
-            Console.WriteLine("输入一个数字：");
-            
-            long num = long.Parse(Console.ReadLine());
-            
-            Console.WriteLine("其质因子如下所示：");
-           
-            Console.WriteLine(getResult(num));
-        }
-        public static String getResult(long num)
-        {
-            StringBuilder cw = new StringBuilder();
-            for (int i = 2; i <= Math.Sqrt(num); i++)
-            {
-                while (true)
-                {
-                    if (num % i == 0)
-                    {
-                        cw.Append(i);
-                        cw.Append(" ");
-                        num /= i;
-                    }
-                    else
-                    {
-                        break;
-                    }
-              }
-            }
-            if (num != 1)
-            {
-                cw.Append(num);
-                cw.Append(" ");
-            }
-            return cw.ToString();
+            int[] array1 = new int[5] { 96, 93, 95, 97, 91 };
+            Console.WriteLine("最大值：" + array1.Max());
+            Console.WriteLine("平均值：" + array1.Average());
+            Console.WriteLine("最小值：" + array1.Min());
+            Console.WriteLine("所有元素的和：" + array1.Sum());
         }
     }
 }
 
+
+
+
+
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
